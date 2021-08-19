@@ -19,21 +19,14 @@ public class CheckBalanced {
                     notBalanced = true;
                 }
                 b++;
-//                if (a == b) {
-//                    continue;
-//                } else {
-//                    System.out.println(" Not Balanced:  openBracket =" + a + ", ClosedBracket =" + b);
-//                    break;
-//                }
+            }
+            if (a == b && !notBalanced) {
+                System.out.println(" Balanced:  openBracket = openBracket =" + a + ", ClosedBracket =" + b);
+            } else {
+                System.out.println(" Not Balanced:  openBracket =" + a + ", ClosedBracket =" + b);
             }
         }
-        if (a == b && !notBalanced) {
-            System.out.println(" Balanced:  openBracket = openBracket =" + a + ", ClosedBracket =" + b);
-        } else {
-            System.out.println(" Not Balanced:  openBracket =" + a + ", ClosedBracket =" + b);
-        }
     }
-
 
     private boolean isEven(int c) {
         return c % 2 == 0;
